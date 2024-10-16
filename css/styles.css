@@ -1,0 +1,104 @@
+/* Variables */
+:root {
+	--snow: #fff;
+	--coffee: #000;
+	--mint: #a0efe6;
+    --dark: #3d8580;
+} 
+
+body{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    color: var(--dark);
+}
+
+h1{
+    font-size: clamp(2.5rem, 4vw, 3rem);
+}
+
+h2{
+    font-size: clamp(2rem, 4vw, 2.5rem);
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+header{
+    padding: 2rem;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul{
+    display: flex;
+    gap: 2rem;
+}
+
+nav li{
+    display: inline-block;   
+
+}
+
+nav a{
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.wrapper {
+    width: min(100% - 3rem, 76.25rem);
+    margin-inline: auto;
+}
+
+.grid {
+    display: grid;
+    gap: 2rem;
+}
+
+.grid-books {
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+ 
+  }
+
+  .grid-3-col {
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .hero {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+}
+.right {
+    align-self: center;
+    justify-self: center;
+    max-width: 50ch;
+}
+
+section{
+    padding-block: 2rem;
+}
+
+section:first-child{
+    padding-top: 0;
+}
+
+footer{
+    background-color: #efefef;
+}
+
+.footer-bottom{
+    background-color:red;
+    padding-block: 1rem;
+}
