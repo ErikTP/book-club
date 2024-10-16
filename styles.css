@@ -20,3 +20,15 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 2rem;
   }
+
+  .hero {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+}
+.right {
+    align-self: center;
+    justify-self: center;
+    max-width: 50ch;
+}
