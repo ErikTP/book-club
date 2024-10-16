@@ -101,4 +101,5 @@ footer{
 .footer-bottom{
     background-color:red;
     padding-block: 1rem;
+    text-align: center;
 }
