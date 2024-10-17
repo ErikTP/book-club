@@ -3,92 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Välkommen till den bästa Bok Klubben!">
+    <meta name="description" content="Läs, dela och upptäck böcker hos oss på Bokklubben!">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
-    <link rel="stylesheet" href="css/styles.css" >
-    <title>Bok Klubb</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="scripts/script.js" defer></script>
+    <title>Bokklubben</title>
 </head>
 
 <body>
     <header>
-        <div class="header-container">
-            <span>
+        <div class="site-header inner-wrapper">
+            
+            <span class="site-logo">
                 Bokklubben
             </span>
        
-        <nav> 
-            <ul>
-                <li> 
-                    <a href="#">Boktips</a>
-                </li>
-                <li> 
-                    <a href="#">Recensioner</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
+            <nav> 
+                <ul>
+                    <li> 
+                        <a href="#books">Lästips</a>
+                    </li>
+                    <li> 
+                        <a href="#reviews">Recensioner</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
+    <main> 
+ 
+        <section class="bg-light">
+            <div class="grid grid-2-col hero inner-wrapper"> 
 
-<main> 
-    <section>
-        <div class="hero wrapper"> 
+                <div class="hero-left">
+                    <h1>Läs, dela och upptäck!</h1>
+                    
+                    <p>Här hos oss på Bokklubben kan du ta del av inspirerande lästips, läsa recensioner och upptäcka nya favoriter.</p>
+                    
+                    <p>Dela dina egna boktips med andra bokälskare och hitta din nästa läsupplevelse tillsammans med oss.</p>
 
-            <div class="left">
-                <h1>Välkommen till Bokklubben!</h1>
-                <p>
-                    Här kan du ta del av inspirerande lästips, läsa recensioner och upptäcka nya favoriter.
-                  </p>
-                  <p>Dela dina egna boktips med andra bokälskare och hitta din nästa läsupplevelse tillsammans med oss. </p>
-                    <p>Oavsett om du letar efter en spännande deckare, en fängslande roman eller något helt nytt, är
-                    bokklubben platsen för dig.
-                  </p>
+                    <button class="button button-light" aria-label="Bli medlem">
+                        <a href="#">Bli medlem</a>
+                    </button>
+
+                </div>
+
+                <div class="hero-right">
+                    <img src="svg/3630159.svg" alt="">
+                </div>    
+                
+            </div> 
+        </section>
+
+        <!-- Books -->
+        <section id="books" class="inner-wrapper">
+            
+            <h2>Andra har läst</h2>
+            <p>Böcker som medlemmar i Bokklubben har läst och tipsar om:</p>
+     
+            <div class="book-gallery grid auto-grid"> 
+                <div><img src="/books/det-borjar-med-oss.jpg" alt="bild på bok"></div>
+                <div><img src="/books/forbannade-karlek.jpg" alt="bild på bok"></div>
+                <div><img src="/books/intermezzo.jpg" alt="bild på bok"></div>
+                <div><img src="/books/natten-vi-forlorade-honom.jpg" alt="bild på bok"></div>
+                <div><img src="/books/nexus.jpg" alt="bild på bok"> </div>
+                <div><img src="/books/normal-people.jpg" alt="bild på bok"></div>
+                <div><img src="/books/testamente.jpg" alt="bild på bok"></div>
+                <div><img src="/books/rich-boy.jpg" alt="bild på bok"></div>
             </div>
 
-            <div class="right">
-                Bild på någon som läser
-            </div>    
-            
-        </div> 
-    </section>
+        </section> 
 
-    <section class="wrapper">
-        <h2>
-            Andra har läst: blablabla....
-        </h2>
-    <div class="grid grid-books"> 
-        <div><img src="/books/det-borjar-med-oss.jpg" alt="bild på bok"> </div>
-        <div><img src="/books/forbannade-karlek.jpg" alt="bild på bok"> </div>
-        <div><img src="/books/intermezzo.jpg" alt="bild på bok"> </div>
-        <div><img src="/books/natten-vi-forlorade-honom.jpg" alt="bild på bok"> </div>
-        <div><img src="/books/nexus.jpg" alt="bild på bok"> </div>
-        <div><img src="/books/normal-people.jpg" alt="bild på bok"> </div>
-        <div><img src="/books/testamente.jpg" alt="bild på bok"> </div>
-        <div><img src="/books/rich-boy.jpg" alt="bild på bok"> </div>
-    </div>
-    </section>
+        <!-- Add a book -->
+        <section id="addBook" class="bg-light">
+            <div class="inner-wrapper">
 
-    
-    <footer>
-        <div class="wrapper"> 
-            <h4>Kontakta oss</h4>
-             <div class="grid grid-3-col"> 
-                <p> Telefon: <a href="tel:+46000099111">+351 737 41 72</a> </p>
-                <p> E-post: <a href="mailto:email@example.com">lorem@ipsum.com</a></p>
-                <ul>
-                    <li>Instagram</li> 
-                    <li>Facebook</li>
-                </ul>
-             </div>
-        </div>
-        <div class="footer-bottom"><p>© 2024 Bokklubben. Alla rättigheter förbehållna.</p> </div>
-    </footer>
+                <div class="grid grid-2-col">
+                    <h2>Lägg till en bok</h2>
+                    <p>Plats för formulär här</p>
+                </div>
 
+            </div>
 
-</main>
+        </section>
+      
+        <!-- Add a review -->
+        <section id="reviews" class="inner-wrapper">
+
+            <div class="grid grid-2-col">
+                <div>
+                    <h2>Lämna recension</h2>
+                    <p>Har du nyss läst ut en bok? Skicka gärna din recension!</p>
+                </div>
+                
+                <p>Plats för formulär här</p>
+
+            </div>
+                
+        </section>
+        
+        <footer>
+
+            <div class="footer-top inner-wrapper"> 
+                
+                <h2>Kontakta oss</h2>
+                
+                <div class="grid auto-grid"> 
+                    <p> Telefon: <a href="tel:+46000099111">+46 737 41 72</a> </p>
+                    <p> E-post: <a href="mailto:email@example.com">lorem@ipsum.com</a></p>   
+                    <ul>
+                        <li><a href="#" target="_blank" aria-label="Facebook">
+                            <img src="svg/facebook.svg" height="40" width="40" alt="Facebook">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank" aria-label="Instagram">
+                            <img src="svg/instagram.svg" height="40" width="40" alt="Instagram">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2024 Bokklubben. Alla rättigheter förbehållna.</p>
+            </div>
+        
+        </footer>
+
+    </main>
 
 </body>
 </html>
