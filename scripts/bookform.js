@@ -42,7 +42,14 @@ function bookInput() {
     // Print array to the document (id: message)
     let titleAndAuthor = inputArray[0] + " av " + inputArray[1];
 
-    document.getElementById("message").innerHTML = titleAndAuthor;
+    // document.getElementById("message").innerHTML = titleAndAuthor;
+
+    // Create element:
+    const para = document.createElement("p");
+    para.innerHTML = titleAndAuthor;
+
+    // Append to another element:
+    document.getElementById("myBook").appendChild(para);
 
     // Send a message in alert pop up
     alert("Boken har lagts till");
