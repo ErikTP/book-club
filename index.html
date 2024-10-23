@@ -84,7 +84,7 @@
                   
                     <div class="form-container" aria-labelledby="form-title">
                         <form id="form">
-                          <h2 id="form-title">Lägg till en bok!</h2>
+                          <h2 id="form-title">Lägg till en bok !</h2>
                           <fieldset>
                             <label for="title">Titel</label>
                             <input type="text" id="titleInput" placeholder="Titel">
@@ -99,26 +99,42 @@
                 </div>
 
             </div>
-
         </section>
+
       
         <!-- Add a review -->
+        
         <section id="reviews" class="inner-wrapper">
+            <div class="grid grid-x-col">
+                <h2>Lämna en recension</h2>
 
-            <div class="grid grid-2-col">
-                <div>
-                    <h2>Lämna recension</h2>
-                    <p>Har du nyss läst ut en bok? Skicka gärna din recension!</p>
-                </div>
-                
-                <p>Plats för formulär här</p>
+                    <form id="recensionForm" action="submit_recension.php" method="post">
+                        <label for="name">Ditt namn:</label>
+                        <input type="text" id="name" name="name" required>
 
-            </div>
+                        <label for="name">Bokens + författarens namn:</label>
+                        <input type="text" id="text" name="text" required>
+
+                        <label for="rating">Betyg (1-5):</label>
+                        <select id="rating" name="rating" required>
+                            <option value="">Välj ett betyg</option>
+                            <option value="1">1 - Mycket dålig</option>
+                            <option value="2">2 - Dålig</option>
+                            <option value="3">3 - Okej</option>
+                            <option value="4">4 - Bra</option>
+                            <option value="5">5 - Mycket bra</option>
+                        </select>
+
+                                <label for="comments">Kommentarer:</label>
+                            <textarea id="comments" name="comments" rows="4" placeholder="Skriv dina tankar här..." required></textarea>
+                        <button type="button" class="button button-light scale-up" onclick="bookInput()">Skicka</button>
+                    </form>
+                    <div id="myFeed"> 
+                    </div>
                 
         </section>
         
         <footer>
-
             <div class="footer-top inner-wrapper"> 
                 
                 <h2>Kontakta oss</h2>

@@ -53,6 +53,5 @@ function bookInput() {
 
     // Send a message in alert pop up
     alert("Boken har lagts till");
-  }
 
-
+}
