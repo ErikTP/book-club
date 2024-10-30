@@ -18,7 +18,13 @@
     // bookInput(); 
 
 
+<<<<<<< HEAD
 function bookInput() {
+=======
+// Function starts after form is submitted (on-click)
+/*function bookInput() {
+
+>>>>>>> 01b79222b45cccb6aa99ff1a037800a18d7511a8
     // Initialize an empty array
     const inputArray = [];
 
