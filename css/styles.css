@@ -255,3 +255,15 @@ footer ul {
     padding-block: 0.5rem 1.3rem;
     text-align: center;
 }
+
+#myBook{
+    list-style-type: none; 
+    min-height: 200px;
+    width: 100%; 
+    margin: auto;
+    padding: var(--space-small);
+    background-color:white;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    text-align: center;
+}
