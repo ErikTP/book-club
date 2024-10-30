@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="css/styles.css" />
     <script src="https://kit.fontawesome.com/1cafef2066.js" crossorigin="anonymous"></script>
     <script src="scripts/bookform.js" defer ></script>
+    <link rel="stylesheet" href="jesper/styles.css">
+    <script src="scripts/modal.js" defer></script>
     <title>Bokklubben</title>
 </head>
 
@@ -66,13 +68,42 @@
             <h2>Andra har läst</h2>
             <p>Böcker som medlemmar i Bokklubben har läst och tipsar om:</p>
      
-            <div class="book-gallery grid auto-grid"> 
-                <div><img src="/books/det-borjar-med-oss.jpg" alt="bild på bok"></div>
-                <div><img src="/books/forbannade-karlek.jpg" alt="bild på bok"></div>
-                <div><img src="/books/intermezzo.jpg" alt="bild på bok"></div>
-                <div><img src="/books/natten-vi-forlorade-honom.jpg" alt="bild på bok"></div>
-                <div><img src="/books/nexus.jpg" alt="bild på bok"> </div>
-                <div><img src="/books/normal-people.jpg" alt="bild på bok"></div>   
+            <section class="book-preview-container">
+                <div class="book-preview">
+                    <img src="books/det-borjar-med-oss.jpg" aria-label="Bokens titel, klicka för att läsa mer" alt="Bild av boken bokens titel" class="myBtn">
+                </div>
+                
+                <div class="book-preview">
+                    <img src="books/forbannade-karlek.jpg" aria-label="Bokens titel, klicka för att läsa mer" alt="Bild av boken bokens titel" class="myBtn">
+                </div>
+            
+                <div class="book-preview">
+                    <img src="books/intermezzo.jpg" aria-label="Bokens titel, klicka för att läsa mer" alt="Bild av boken bokens titel" class="myBtn">
+            
+                </div>
+                <div class="book-preview">
+                    <img src="books/natten-vi-forlorade-honom.jpg" aria-label="Bokens titel, klicka för att läsa mer" alt="Bild av boken bokens titel" class="myBtn">
+            
+                </div>
+                <div class="book-preview">
+                    <img src="books/nexus.jpg" aria-label="Bokens titel, klicka för att läsa mer" alt="Bild av boken bokens titel" class="myBtn">
+            
+                </div>
+                <div class="book-preview">
+                    <img src="books/rich-boy.jpg" aria-label="Bokens titel, klicka för att läsa mer" alt="Bild av boken bokens titel" class="myBtn">
+            
+                </div>
+            </section>
+            
+                <!-- The Modal -->
+            <div id="myModal" class="modal">
+              <!-- Tre olika böcker -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Book Title</h2>
+                    <img src="https://placehold.co/200" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas autem doloremque cupiditate aperiam aut optio ea quidem omnis ab placeat dolor distinctio alias corrupti ducimus labore, aliquid rerum perspiciatis odit voluptates! Cum labore illum a fugit, laudantium accusantium qui! Reprehenderit tenetur maiores dolor, incidunt nemo nesciunt maxime ab unde consectetur?</p>
+                </div>
             </div>
 
         </section> 
