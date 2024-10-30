@@ -10,6 +10,8 @@
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <script src="scripts/bookform.js" defer ></script>
+    <script src="scripts/review.js" defer ></script>
+
     <title>Bokklubben</title>
 </head>
 
@@ -83,13 +85,13 @@
                 <div class="grid grid-2-col">
                   
                     <div class="form-container" aria-labelledby="form-title">
-                        <form id="form">
+                        <form id="bookForm">
                           <h2 id="form-title">Lägg till en bok !</h2>
                           <fieldset>
-                            <label for="title">Titel</label>
-                            <input type="text" id="titleInput" placeholder="Titel">
-                            <label for="title">Författare</label>
-                            <input type="text" id="authorInput" placeholder="Författare">
+                            <label for="bookTitle">Titel</label>
+                            <input type="text" id="bookTitleInput" placeholder="Titel">
+                            <label for="bookAuthor">Författare</label>
+                            <input type="text" id="bookAuthorInput" placeholder="Författare">
                           </fieldset>
                           <button type="button" class="button button-light scale-up" onclick="bookInput()">Skicka</button>
                         </form>
@@ -104,16 +106,16 @@
       
         <!-- Add a review -->
         
-        <section id="reviews" class="inner-wrapper">
+        <section id="addReview" class="inner-wrapper">
             <div class="grid grid-x-col">
                 <h2>Lämna en recension</h2>
 
                     <form id="recensionForm" action="submit_recension.php" method="post">
-                        <label for="name">Ditt namn:</label>
-                        <input type="text" id="name" name="name" required>
+                        <label for="reviewNameInput">Ditt namn:</label>
+                        <input type="text" id="reviewNameInput" name="name" required>
 
-                        <label for="name">Bokens + författarens namn:</label>
-                        <input type="text" id="text" name="text" required>
+                        <label for="reviewTextInput">Bokens + författarens namn:</label>
+                        <input type="text" id="reviewTextInput" name="text" required>
 
                         <label for="rating">Betyg (1-5):</label>
                         <select id="rating" name="rating" required>
@@ -127,8 +129,8 @@
 
                                 <label for="comments">Kommentarer:</label>
                             <textarea id="comments" name="comments" rows="4" placeholder="Skriv dina tankar här..." required></textarea>
-                        <button type="button" class="button button-light scale-up" onclick="bookInput()">Skicka</button>
-                    </form>
+                            <button type="button" class="button button-light scale-up" onclick="reviewInput()">Skicka</button>
+                        </form>
                     <div id="myFeed"> 
                     </div>
                 

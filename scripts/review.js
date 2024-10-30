@@ -1,37 +1,31 @@
-// Function starts after form is submitted (on-click)
 function reviewInput() {
+// Initialize an empty array
+const inputArray = [];
 
-    // Initialize an empty array
-    const inputArray = [];
+// Get the input elements
+const inputName = document.getElementById("reviewNameInput");
+const inputText = document.getElementById("reviewTextInput");
 
-    // Get the input elements
-    const inputTitle = document.getElementById("titleInput");
-    const inputAuthor = document.getElementById("authorInput");
+// Get the values of the input elements
+const name = inputName.value;
+const text = inputText.value;
 
-    // Get the values of the input elements
+// Add the values to the array
+inputArray.push(name, text);
 
-    const title = inputTitle.value;
-    const author = inputAuthor.value;
+// Print the array to the console
+console.log(inputArray);
 
-    // Add the values to the array
-    inputArray.push(title, author);
+// Create a string for name and text
+let reviewContent = inputArray[0] + ": " + inputArray[1];
 
-    // Print the array to the console
-    console.log(inputArray);
+// Create paragraph element with the content
+const para = document.createElement("p");
+para.innerHTML = reviewContent;
 
-    // Print array to the document (id: message)
-    let titleAndAuthor = inputArray[0] + " av " + inputArray[1];
+// Append to the "myFeed" element
+document.getElementById("myFeed").appendChild(para);
 
-    // document.getElementById("message").innerHTML = titleAndAuthor;
-
-    // Create element:
-    const para = document.createElement("p");
-    para.innerHTML = titleAndAuthor;
-
-    // Append to another element:
-    document.getElementById("myFeed").appendChild(para);
-
-    // Send a message in alert pop up
-    alert("Recensionen har lagts till");
-
+// Display alert message
+alert("Recensionen har lagts till");
 }
