@@ -47,10 +47,9 @@ function bookInput() {
         inputAuthor.value = "";
 
         // Send a message in alert pop up
-        alert("Boken har lagts till");
+        alert("Boken har lagts till!");
     
     } else {
-        alert("Du måste lägga till en bok");
-        console.log("Du måste lägga till en bok");
+        alert("Du måste fylla i både bok och författare.");
     }
 }
