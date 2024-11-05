@@ -1,5 +1,6 @@
 function reviewInput() {
     let reviewForm = document.getElementById("reviewForm");
+    let reviewResult = document.getElementById("reviewResult");
     const inputArray = []; // Initialize an empty array
 
     // Get the input elements
@@ -10,30 +11,57 @@ function reviewInput() {
     const inputComments = document.getElementById("comments");
 
     // Get the values of the input elements
-    const name = inputName.value;
+    const reviewer = inputName.value;
     const bookTitle = inputBookTitle.value;
     const writer = inputWriter.value;
     const rating = inputRating.value;
     const comments = inputComments.value;
 
     // Add the values to the array
-    inputArray.push(name, bookTitle, writer, rating, comments);
+    inputArray.push(reviewer, bookTitle, writer, rating, comments);
 
     // Print the array to the console
     console.log(inputArray);
 
     // Check if inputs are true (are filled)
-    if(name && bookTitle && writer && rating && comments !== "") {
+    if(reviewer && bookTitle && writer && rating && comments !== "") {
       // Create a string for name and text
-      let reviewContent = `Recension av ${inputArray[0]}: "${inputArray[1]}" av ${inputArray[2]} - Betyg: ${inputArray[3]} - Kommentar: ${inputArray[4]}`;
+      //let reviewContent = `Recension av ${inputArray[0]}: "${inputArray[1]}" av ${inputArray[2]} - Betyg: ${inputArray[3]} - Kommentar: ${inputArray[4]}`;
 
       // Create paragraph element with the content
-      const para = document.createElement("p");
-      para.innerHTML = reviewContent;
+      //const para = document.createElement("p");
+      //para.innerHTML = reviewContent;
   
       // Append to the "myFeed" element
-      document.getElementById("reviewResult").appendChild(para);
-  
+      //document.getElementById("reviewResult").appendChild(para);
+
+      // New review in li element
+      const newReviewItem = document.createElement("li"); 
+
+      // Creates and adds HTML-element for each input result
+      const reviewerElement = document.createElement("p");
+      reviewerElement.textContent = `Namn: ${reviewer}`;
+      newReviewItem.appendChild(reviewerElement);
+
+      const bookTitleElement = document.createElement("p");
+      bookTitleElement.textContent = `Bokens titel: ${bookTitle}`;
+      newReviewItem.appendChild(bookTitleElement);
+
+      const authorElement = document.createElement("p");
+      authorElement.textContent = `Bokens författare: ${writer}`;
+      newReviewItem.appendChild(authorElement);
+
+      const ratingElement = document.createElement("p");
+      ratingElement.textContent = `Betyg: ${rating}`;
+      newReviewItem.appendChild(ratingElement);
+
+      const commentsElement = document.createElement("p");
+      commentsElement.textContent = `Kommentar: ${comments}`;
+      newReviewItem.appendChild(commentsElement);
+
+      // Adds new review in to the result list 
+      reviewResult.appendChild(newReviewItem); 
+
       // Reset form
       reviewForm.reset();
   
