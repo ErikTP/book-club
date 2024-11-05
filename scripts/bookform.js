@@ -19,11 +19,11 @@ function bookInput() {
     // Combine title and author for display
     const titleAndAuthor = inputArray[0] + " av " + inputArray[1];
 
+    // Check if inputs are true (are filled)
     if(title && author !== "") {
         // Create a new list item element
         const listItem = document.createElement("li");
         listItem.innerHTML = titleAndAuthor;
-        console.log('hej');
 
         // Add click event to show or hide more information
         listItem.addEventListener("click", function() {
@@ -52,4 +52,4 @@ function bookInput() {
     } else {
         alert("Du måste fylla i både bok och författare.");
     }
-}
+};

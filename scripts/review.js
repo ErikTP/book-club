@@ -22,19 +22,24 @@ function reviewInput() {
     // Print the array to the console
     console.log(inputArray);
 
-    // Create a string for name and text
-    let reviewContent = `Recension av ${inputArray[0]}: "${inputArray[1]}" av ${inputArray[2]} - Betyg: ${inputArray[3]} - Kommentar: ${inputArray[4]}`;
+    // Check if inputs are true (are filled)
+    if(name && bookTitle && writer && rating && comments !== "") {
+      // Create a string for name and text
+      let reviewContent = `Recension av ${inputArray[0]}: "${inputArray[1]}" av ${inputArray[2]} - Betyg: ${inputArray[3]} - Kommentar: ${inputArray[4]}`;
 
-    // Create paragraph element with the content
-    const para = document.createElement("p");
-    para.innerHTML = reviewContent;
-
-    // Append to the "myFeed" element
-    document.getElementById("reviewResult").appendChild(para);
-
-    // Reset form
-    reviewForm.reset();
-
-    // Display alert message
-    alert("Recensionen har lagts till!");
-}
+      // Create paragraph element with the content
+      const para = document.createElement("p");
+      para.innerHTML = reviewContent;
+  
+      // Append to the "myFeed" element
+      document.getElementById("reviewResult").appendChild(para);
+  
+      // Reset form
+      reviewForm.reset();
+  
+      // Display alert message
+      alert("Recensionen har lagts till!");
+    } else {
+        alert("Du måste fylla i alla uppgifter i recensionen.");
+    }
+};
