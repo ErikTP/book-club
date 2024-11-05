@@ -4,24 +4,26 @@ function reviewInput() {
 
     // Get the input elements
     const inputName = document.getElementById("reviewNameInput");
-    const inputText = document.getElementById("reviewTextInput");
+    const inputBookTitle = document.getElementById("reviewBookInput");
+    const inputWriter = document.getElementById("reviewWriterInput");
     const inputRating = document.getElementById("rating");
     const inputComments = document.getElementById("comments");
 
     // Get the values of the input elements
     const name = inputName.value;
-    const text = inputText.value;
+    const bookTitle = inputBookTitle.value;
+    const writer = inputWriter.value;
     const rating = inputRating.value;
     const comments = inputComments.value;
 
     // Add the values to the array
-    inputArray.push(name, text, rating, comments);
+    inputArray.push(name, bookTitle, writer, rating, comments);
 
     // Print the array to the console
     console.log(inputArray);
 
     // Create a string for name and text
-    let reviewContent = `Recension av ${inputArray[0]}: "${inputArray[1]}" - Betyg: ${inputArray[2]} - Kommentar: ${inputArray[3]}`;
+    let reviewContent = `Recension av ${inputArray[0]}: "${inputArray[1]}" av ${inputArray[2]} - Betyg: ${inputArray[3]} - Kommentar: ${inputArray[4]}`;
 
     // Create paragraph element with the content
     const para = document.createElement("p");

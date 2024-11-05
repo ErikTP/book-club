@@ -147,13 +147,16 @@
                     <h2 id="reviews">Lämna en recension</h2>
 
                     <form id="reviewForm" action="submit_recension.php" method="post">
-                        <label for="reviewNameInput">Ditt namn:</label>
+                        <label for="reviewNameInput">Ditt namn</label>
                         <input type="text" id="reviewNameInput" name="name" required>
 
-                        <label for="reviewTextInput">Bokens + författarens namn:</label>
-                        <input type="text" id="reviewTextInput" name="text" required>
+                        <label for="reviewBookInput">Bokens titel</label>
+                        <input type="text" id="reviewBookInput" name="text" required>
 
-                        <label for="rating">Betyg (1-5):</label>
+                        <label for="reviewTextInput">Bokens författare</label>
+                        <input type="text" id="reviewWriterInput" name="text" required>
+
+                        <label for="rating">Betyg (1-5)</label>
                         <select id="rating" name="rating" required>
                             <option value="">Välj ett betyg</option>
                             <option value="1">1 - Mycket dålig</option>
@@ -163,7 +166,7 @@
                             <option value="5">5 - Mycket bra</option>
                         </select>
 
-                        <label for="comments">Kommentarer:</label>
+                        <label for="comments">Kommentarer</label>
                         <textarea id="comments" name="comments" rows="4" placeholder="Skriv dina tankar här..." required></textarea>
                         
                         <button type="button" class="button button-light scale-up" onclick="reviewInput()">Skicka</button>
