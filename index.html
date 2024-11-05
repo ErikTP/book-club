@@ -124,7 +124,7 @@
                       </div>
 
                     <div>
-                        <h2>Boklista</h2>
+                        <h2>Böcker som lagts till</h2>
                         <ul id="myBook"> 
                             <div id="bookDetails" class="book-details-section">
                                 <!-- Detaljerna om boken kommer att visas här -->
@@ -141,10 +141,12 @@
         <!-- Add a review -->
         
         <section id="addReview" class="inner-wrapper">
-            <div class="grid grid-x-col">
-                <h2 id="reviews">Lämna en recension</h2>
+            <div class="grid grid-2-col">
 
-                    <form id="recensionForm" action="submit_recension.php" method="post">
+                <div>
+                    <h2 id="reviews">Lämna en recension</h2>
+
+                    <form id="revievForm" action="submit_recension.php" method="post">
                         <label for="reviewNameInput">Ditt namn:</label>
                         <input type="text" id="reviewNameInput" name="name" required>
 
@@ -161,13 +163,18 @@
                             <option value="5">5 - Mycket bra</option>
                         </select>
 
-                            <label for="comments">Kommentarer:</label>
-                            <textarea id="comments" name="comments" rows="4" placeholder="Skriv dina tankar här..." required></textarea>
-                            <button type="button" class="button button-light scale-up" onclick="reviewInput()">Skicka</button>
-                        </form>
-                    <div id="myFeed"> 
-                    </div>
-                
+                        <label for="comments">Kommentarer:</label>
+                        <textarea id="comments" name="comments" rows="4" placeholder="Skriv dina tankar här..." required></textarea>
+                        
+                        <button type="button" class="button button-light scale-up" onclick="reviewInput()">Skicka</button>
+                    </form>
+                </div>
+
+                <div id="myFeed"> 
+                    <!-- Review Input Result here -->
+                </div>
+
+            </div>           
         </section>
         
         <footer>
