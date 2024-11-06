@@ -103,6 +103,11 @@ button:hover {
     font-weight: 900;
 }
 
+.site-logo a,
+site-logo a:visited{
+    color: var(--tomato);
+}
+
 /* Site navigation */
 nav ul {
     display: flex;
@@ -172,7 +177,6 @@ input, select, textarea {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-
 
 /* Hero section */
 .hero {
