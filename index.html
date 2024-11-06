@@ -116,9 +116,9 @@
                         <form id="bookForm">
                           <h2 id="form-title">Lägg till en bok</h2>
                             <label for="bookTitle">Titel</label>
-                            <input type="text" id="titleInput" placeholder="Titel">
+                            <input type="text" id="titleInput" placeholder="Titel" aria-label="Skriv bokens titel här" required aria-required="true">
                             <label for="bookAuthor">Författare</label>
-                            <input type="text" id="authorInput" placeholder="Författare">
+                            <input type="text" id="authorInput" placeholder="Författare" aria-label="Skriv bokens författare här" required aria-required="true">
                           <button type="button" class="button button-light scale-up" onclick="bookInput()" aria-label="Skicka in din bok">Skicka</button>
                         </form>
                       </div>
@@ -141,18 +141,18 @@
                 <div>
                     <h2 id="reviews">Lämna en recension</h2>
 
-                    <form id="reviewForm" action="submit_recension.php" method="post">
+                    <form id="reviewForm">
                         <label for="reviewNameInput">Ditt namn</label>
-                        <input type="text" id="reviewNameInput" name="name" required>
+                        <input type="text" id="reviewNameInput" name="name" required aria-required="true" placeholder="Ditt namn">
 
                         <label for="reviewBookInput">Bokens titel</label>
-                        <input type="text" id="reviewBookInput" name="text" required>
+                        <input type="text" id="reviewBookInput" name="text" required aria-required="true" placeholder="Bokens titel">
 
-                        <label for="reviewTextInput">Bokens författare</label>
-                        <input type="text" id="reviewWriterInput" name="text" required>
+                        <label for="reviewWriterInput">Bokens författare</label>
+                        <input type="text" id="reviewWriterInput" name="text" required aria-required="true" placeholder="Bokens författare">
 
                         <label for="rating">Betyg (1-5)</label>
-                        <select id="rating" name="rating" required>
+                        <select id="rating" name="rating" required aria-required="true">
                             <option value="">Välj ett betyg</option>
                             <option value="1">1 - Mycket dålig</option>
                             <option value="2">2 - Dålig</option>
@@ -162,7 +162,7 @@
                         </select>
 
                         <label for="comments">Kommentarer</label>
-                        <textarea id="comments" name="comments" rows="4" placeholder="Skriv dina tankar här..." required></textarea>
+                        <textarea id="comments" name="comments" rows="4" placeholder="Skriv dina tankar om boken här..." required></textarea>
                         
                         <button type="button" class="button button-light scale-up" onclick="reviewInput()" aria-label="Skicka in din recension">Skicka</button>
                     </form>
