@@ -33,6 +33,7 @@ function bookInput() {
         // Create a delete button and attach the delete functionality
         const deleteButton = document.createElement("button");
         deleteButton.innerHTML = trashIcon;
+        deleteButton.setAttribute("aria-label", `Ta bort ${title}`); // lägger till aria label med bokens titel
         deleteButton.addEventListener("click", (event) => {
             event.stopPropagation(); // Prevent triggering book details display on delete
             listItem.remove(); // Remove the list item
