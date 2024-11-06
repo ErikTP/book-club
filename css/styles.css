@@ -202,7 +202,7 @@ input, select, textarea {
 
 /* Section */
 section {
-    padding-block: 2rem;
+    padding-block: min(5vw, 4rem);
 }
 
 /* Background variations */
@@ -223,6 +223,7 @@ section {
 /* Site footer */
 footer {
     background: var(--dark-green);
+    padding-top: min(5vw, 3rem);
 }
 
 footer h2 {
@@ -246,7 +247,7 @@ footer ul {
 
 .footer-top {
     color: var(--snow);
-    padding-block: 2rem;
+    padding-bottom: min(5vw, 6rem);
 }
 
 .footer-bottom {
@@ -256,14 +257,22 @@ footer ul {
     text-align: center;
 }
 
-#myBook{
-    list-style-type: none; 
-    min-height: 200px;
-    width: 100%; 
-    margin: auto;
-    padding: var(--space-small);
+.input-result-list {
     background-color:white;
-    border: 2px solid var(--primary-color);
     border-radius: 5px;
-    text-align: center;
+    /*border: 2px solid var(--primary-color); Färg finns ej som variabel? */
+    list-style-type: none; 
+    margin: auto;
+    min-height: 200px;
+    /*padding: var(--space-small); Finns ej variabel? */
+    padding: 1rem;
+    width: 100%; 
+}
+
+.input-result-list li {
+    padding-bottom: 1rem;
+}
+
+.input-result-list li button {
+    margin-left: 1rem;
 }
