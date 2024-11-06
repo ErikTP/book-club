@@ -218,11 +218,12 @@ section {
     margin: 0; 
 }
 
-#myBook{
-    border: 0.25rem solid var(--green);
+#myBook, #reviewResult{
+    border: 0.18rem solid var(--green);
+    height: 78%;
 }
 
-#myBook li {
+#myBook li{
     display: flex;
     justify-content: space-between;
     padding: 10px 15px; 
@@ -234,11 +235,24 @@ section {
     border: 1.6px outset var(--green);
     font-size: 1.1rem;
     text-transform: capitalize;
+    font-weight: bold;
 }
 
-#myBook li:hover {
+#myBook li:hover, #reviewResult li:hover  {
     background-color: var(--orange); 
 }
+
+#reviewResult li{
+    padding: 10px 15px; 
+    margin: 1rem;
+    background-color: var(--beige);
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+    border: 1.6px outset var(--green);
+    font-size: 1.1rem;
+    text-transform: capitalize;
+} 
 
 /* Site footer */
 footer {

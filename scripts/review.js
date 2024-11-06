@@ -40,24 +40,25 @@ function reviewInput() {
 
       // Creates and adds HTML-element for each input result
       const reviewerElement = document.createElement("p");
-      reviewerElement.textContent = `Namn: ${reviewer}`;
-      newReviewItem.appendChild(reviewerElement);
+reviewerElement.innerHTML = `<span style="font-weight: bold;"> Namn: </span> ${reviewer}`;
+newReviewItem.appendChild(reviewerElement);
 
-      const bookTitleElement = document.createElement("p");
-      bookTitleElement.textContent = `Bokens titel: ${bookTitle}`;
-      newReviewItem.appendChild(bookTitleElement);
+const bookTitleElement = document.createElement("p");
+bookTitleElement.innerHTML = `<span style="font-weight: bold;"> Bokens titel: </span> ${bookTitle}`;
+newReviewItem.appendChild(bookTitleElement);
 
-      const authorElement = document.createElement("p");
-      authorElement.textContent = `Bokens författare: ${writer}`;
-      newReviewItem.appendChild(authorElement);
+const authorElement = document.createElement("p");
+authorElement.innerHTML = `<span style="font-weight: bold;">Bokens författare: </span> ${writer}`;
+newReviewItem.appendChild(authorElement);
 
-      const ratingElement = document.createElement("p");
-      ratingElement.textContent = `Betyg: ${rating}`;
-      newReviewItem.appendChild(ratingElement);
+const ratingElement = document.createElement("p");
+ratingElement.innerHTML = `<span style="font-weight: bold;">Betyg: </span> ${rating}`;
+newReviewItem.appendChild(ratingElement);
 
-      const commentsElement = document.createElement("p");
-      commentsElement.textContent = `Kommentar: ${comments}`;
-      newReviewItem.appendChild(commentsElement);
+const commentsElement = document.createElement("p");
+commentsElement.innerHTML = `<span style="font-weight: bold;">Kommentar: </span> ${comments}`;
+newReviewItem.appendChild(commentsElement);
+
 
       // Adds new review in to the result list 
       reviewResult.appendChild(newReviewItem); 
