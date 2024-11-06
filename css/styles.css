@@ -43,6 +43,10 @@ p {
     margin-top: 1rem;
 }
 
+ul {
+    list-style-type: none; 
+}
+
 /* Links */
 a {
     text-decoration: none;
@@ -99,6 +103,11 @@ button:hover {
     font-weight: 900;
 }
 
+.site-logo a,
+site-logo a:visited{
+    color: var(--tomato);
+}
+
 /* Site navigation */
 nav ul {
     display: flex;
@@ -147,22 +156,6 @@ Responsive Grid Layout, no Media Queries required */
     }
 }
 
-.grid-3-col {
-    grid-template-rows: auto;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-.grid-x-col {
-    grid-template-rows: auto;
-    grid-template-columns: 1fr;
-}
-
-@media (min-width: 1024px) {
-    .grid-x-col {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
 .form {
     max-width: 400px;
     margin: 0 auto;
@@ -184,7 +177,6 @@ input, select, textarea {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-
 
 /* Hero section */
 .hero {
@@ -260,7 +252,6 @@ footer ul {
 .input-result-list {
     background-color: var(--snow);
     border-radius: 5px;
-    list-style-type: none; 
     margin: auto;
     min-height: 200px;
     padding: 1rem;

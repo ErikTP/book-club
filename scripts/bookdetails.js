@@ -1,3 +1,4 @@
+// JESPERS
 // Function to toggle the visibility of book details
 function toggleBookDetails(listItem, title, author) {
     // Check if a details section already exists below the clicked item
@@ -31,7 +32,7 @@ function toggleBookDetails(listItem, title, author) {
         listItem.insertAdjacentElement("afterend", detailsDiv);
     }
 }
-// DETTA ÄR JESPERS (Hannele flyttade detta till egen fil från bookform.js)
+
 //använde skript från jespers todolista-projekt och med tre promptar till chatgpt kunde vi lägga till papperskorgen
 //funktion för papperskorgen, samt att texten visas under istället för över och även går att dölja med ytterligare klick
 //hade inte jättemycket tid så jag tog den lata vägen denna gången bara för att få det gjort
