@@ -220,7 +220,10 @@ section {
 
 #myBook, #reviewResult{
     border: 0.18rem solid var(--green);
-    height: 78%;
+    height: 75%;
+    overflow: auto;
+    scrollbar-color: var(--green) var(--dark-green);
+    scrollbar-width: thin; 
 }
 
 #myBook li{
