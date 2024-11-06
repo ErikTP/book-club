@@ -258,13 +258,11 @@ footer ul {
 }
 
 .input-result-list {
-    background-color:white;
+    background-color: var(--snow);
     border-radius: 5px;
-    /*border: 2px solid var(--primary-color); Färg finns ej som variabel? */
     list-style-type: none; 
     margin: auto;
     min-height: 200px;
-    /*padding: var(--space-small); Finns ej variabel? */
     padding: 1rem;
     width: 100%; 
 }
