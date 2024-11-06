@@ -29,30 +29,6 @@ body {font-family: Arial, Helvetica, sans-serif;}
   box-shadow: 1rem 1rem 5rem 1rem;
 }
 
-/* responsiv visning av böcker
-1 till 600px
-2 vid 600px
-3 vid 900px
-4 vid 1200px */
-@media (min-width: 600px) {
-  .book-preview-container {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-
-@media (min-width: 900px) {
-  .book-preview-container {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-}
-
-@media (min-width: 1200px) {
-  .book-preview-container {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  }
-}
-
-
 .book-preview {
     display: flex;
     flex-direction: column;
@@ -88,3 +64,31 @@ body {font-family: Arial, Helvetica, sans-serif;}
   text-decoration: none;
   cursor: pointer;
 }
+/* responsiv visning av böcker
+1 till 600px
+2 vid 600px
+3 vid 900px
+4 vid 1200px */
+@media (min-width: 600px) {
+  .book-preview-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 900px) {
+  .book-preview-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .modal-content {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .book-preview-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+
+
+
