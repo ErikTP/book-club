@@ -25,16 +25,7 @@ function reviewInput() {
 
     // Check if inputs are true (are filled)
     if(reviewer && bookTitle && writer && rating && comments !== "") {
-      // Create a string for name and text
-      //let reviewContent = `Recension av ${inputArray[0]}: "${inputArray[1]}" av ${inputArray[2]} - Betyg: ${inputArray[3]} - Kommentar: ${inputArray[4]}`;
-
-      // Create paragraph element with the content
-      //const para = document.createElement("p");
-      //para.innerHTML = reviewContent;
-  
-      // Append to the "myFeed" element
-      //document.getElementById("reviewResult").appendChild(para);
-
+      
       // New review in li element
       const newReviewItem = document.createElement("li"); 
 
