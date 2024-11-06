@@ -212,6 +212,34 @@ section {
     justify-self: center;
 }
 
+.myBook-container{
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+}
+
+#myBook{
+    border: 0.25rem solid var(--green);
+}
+
+#myBook li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px; 
+    margin-bottom: 1rem;
+    background-color: var(--beige);
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+    border: 1.6px outset var(--green);
+    font-size: 1.1rem;
+    text-transform: capitalize;
+}
+
+#myBook li:hover {
+    background-color: var(--orange); 
+}
+
 /* Site footer */
 footer {
     background: var(--dark-green);
