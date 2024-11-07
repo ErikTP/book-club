@@ -218,10 +218,11 @@ section {
     margin: 0; 
 }
 
-#myBook, #reviewResult{
+#myBook, #reviewResult {
+    min-height: 300px;
+    max-height: 300px; 
+    overflow-y: auto;
     border: 0.18rem solid var(--green);
-    height: 75%;
-    overflow: auto;
     scrollbar-color: var(--green) var(--dark-green);
     scrollbar-width: thin; 
 }
